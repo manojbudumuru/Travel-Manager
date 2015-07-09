@@ -1,4 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Activity" syncable="YES">
+        <attribute name="activity_ID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activity_Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activity_Type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contacts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trip_ID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Companions" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_NO" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trip_ID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Dining" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="confirmation_No" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_NO" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="reserved_Date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="reserved_Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="restaurant_Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trip_ID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Flight" representedClassName="Flight" syncable="YES">
+        <attribute name="airlines" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="arrival_Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="confirmation_NO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departure_Date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="departure_Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="destination" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flight_NO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trip_ID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="ftrip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" syncable="YES"/>
+    </entity>
+    <entity name="Ground_Transportation" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="confirmation_NO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_NO" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="reserved_Date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="reserved_Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supplier_Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transportation_Type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trip_ID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Lodging" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="confirmation_NO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_NO" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lodge_Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reserved_Date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trip_ID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Trip" representedClassName="Trip" syncable="YES">
+        <attribute name="trip_ID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="trip_Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trip_Starting_Date" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Companions" positionX="-54" positionY="36" width="128" height="103"/>
+        <element name="Dining" positionX="-36" positionY="45" width="128" height="148"/>
+        <element name="Flight" positionX="-18" positionY="54" width="128" height="195"/>
+        <element name="Ground_Transportation" positionX="18" positionY="72" width="128" height="163"/>
+        <element name="Lodging" positionX="-9" positionY="36" width="128" height="133"/>
+        <element name="Trip" positionX="0" positionY="63" width="128" height="90"/>
+    </elements>
 </model>

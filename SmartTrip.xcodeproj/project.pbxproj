@@ -14,6 +14,22 @@
 		4681E9521B4ECB4200A89B0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4681E9511B4ECB4200A89B0B /* Images.xcassets */; };
 		4681E9551B4ECB4200A89B0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4681E9531B4ECB4200A89B0B /* LaunchScreen.xib */; };
 		4681E9611B4ECB4200A89B0B /* SmartTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E9601B4ECB4200A89B0B /* SmartTripTests.swift */; };
+		4681E9761B4ECBEF00A89B0B /* Airplane Takeoff-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E96A1B4ECBEF00A89B0B /* Airplane Takeoff-24.png */; };
+		4681E9771B4ECBEF00A89B0B /* Hotel-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E96B1B4ECBEF00A89B0B /* Hotel-24.png */; };
+		4681E9781B4ECBEF00A89B0B /* users_group_people_friends-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E96C1B4ECBEF00A89B0B /* users_group_people_friends-24.png */; };
+		4681E9791B4ECBEF00A89B0B /* notepad-edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E96D1B4ECBEF00A89B0B /* notepad-edit.png */; };
+		4681E97A1B4ECBEF00A89B0B /* Hotel-24 (3).png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E96E1B4ECBEF00A89B0B /* Hotel-24 (3).png */; };
+		4681E97B1B4ECBEF00A89B0B /* Airport-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E96F1B4ECBEF00A89B0B /* Airport-25.png */; };
+		4681E97C1B4ECBEF00A89B0B /* Hotel-24 (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E9701B4ECBEF00A89B0B /* Hotel-24 (2).png */; };
+		4681E97D1B4ECBEF00A89B0B /* plan (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E9711B4ECBEF00A89B0B /* plan (1).png */; };
+		4681E97E1B4ECBEF00A89B0B /* Dining Room-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E9721B4ECBEF00A89B0B /* Dining Room-25.png */; };
+		4681E97F1B4ECBEF00A89B0B /* Dining Room Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E9731B4ECBEF00A89B0B /* Dining Room Filled-25.png */; };
+		4681E9801B4ECBEF00A89B0B /* Dining Room-24 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E9741B4ECBEF00A89B0B /* Dining Room-24 (1).png */; };
+		4681E9811B4ECBEF00A89B0B /* Ground Transportation Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E9751B4ECBEF00A89B0B /* Ground Transportation Filled-25.png */; };
+		4681E9891B4ED31900A89B0B /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E9881B4ED31900A89B0B /* FlightViewController.swift */; };
+		4681E98B1B4ED38200A89B0B /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E98A1B4ED38200A89B0B /* TripViewController.swift */; };
+		4681E9911B4ED9A900A89B0B /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E9901B4ED9A900A89B0B /* Flight.swift */; };
+		4681E9931B4ED9AA00A89B0B /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E9921B4ED9AA00A89B0B /* Trip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +54,22 @@
 		4681E95A1B4ECB4200A89B0B /* SmartTripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4681E95F1B4ECB4200A89B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4681E9601B4ECB4200A89B0B /* SmartTripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTripTests.swift; sourceTree = "<group>"; };
+		4681E96A1B4ECBEF00A89B0B /* Airplane Takeoff-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Airplane Takeoff-24.png"; sourceTree = "<group>"; };
+		4681E96B1B4ECBEF00A89B0B /* Hotel-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hotel-24.png"; sourceTree = "<group>"; };
+		4681E96C1B4ECBEF00A89B0B /* users_group_people_friends-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "users_group_people_friends-24.png"; sourceTree = "<group>"; };
+		4681E96D1B4ECBEF00A89B0B /* notepad-edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notepad-edit.png"; sourceTree = "<group>"; };
+		4681E96E1B4ECBEF00A89B0B /* Hotel-24 (3).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hotel-24 (3).png"; sourceTree = "<group>"; };
+		4681E96F1B4ECBEF00A89B0B /* Airport-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Airport-25.png"; sourceTree = "<group>"; };
+		4681E9701B4ECBEF00A89B0B /* Hotel-24 (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hotel-24 (2).png"; sourceTree = "<group>"; };
+		4681E9711B4ECBEF00A89B0B /* plan (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plan (1).png"; sourceTree = "<group>"; };
+		4681E9721B4ECBEF00A89B0B /* Dining Room-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dining Room-25.png"; sourceTree = "<group>"; };
+		4681E9731B4ECBEF00A89B0B /* Dining Room Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dining Room Filled-25.png"; sourceTree = "<group>"; };
+		4681E9741B4ECBEF00A89B0B /* Dining Room-24 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dining Room-24 (1).png"; sourceTree = "<group>"; };
+		4681E9751B4ECBEF00A89B0B /* Ground Transportation Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ground Transportation Filled-25.png"; sourceTree = "<group>"; };
+		4681E9881B4ED31900A89B0B /* FlightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
+		4681E98A1B4ED38200A89B0B /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
+		4681E9901B4ED9A900A89B0B /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flight.swift; path = ../Flight.swift; sourceTree = "<group>"; };
+		4681E9921B4ED9AA00A89B0B /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trip.swift; path = ../Trip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +112,23 @@
 			isa = PBXGroup;
 			children = (
 				4681E9471B4ECB4200A89B0B /* AppDelegate.swift */,
+				4681E98A1B4ED38200A89B0B /* TripViewController.swift */,
 				4681E94C1B4ECB4200A89B0B /* ViewController.swift */,
+				4681E9921B4ED9AA00A89B0B /* Trip.swift */,
+				4681E9881B4ED31900A89B0B /* FlightViewController.swift */,
+				4681E96A1B4ECBEF00A89B0B /* Airplane Takeoff-24.png */,
+				4681E96B1B4ECBEF00A89B0B /* Hotel-24.png */,
+				4681E9901B4ED9A900A89B0B /* Flight.swift */,
+				4681E96C1B4ECBEF00A89B0B /* users_group_people_friends-24.png */,
+				4681E96D1B4ECBEF00A89B0B /* notepad-edit.png */,
+				4681E96E1B4ECBEF00A89B0B /* Hotel-24 (3).png */,
+				4681E96F1B4ECBEF00A89B0B /* Airport-25.png */,
+				4681E9701B4ECBEF00A89B0B /* Hotel-24 (2).png */,
+				4681E9711B4ECBEF00A89B0B /* plan (1).png */,
+				4681E9721B4ECBEF00A89B0B /* Dining Room-25.png */,
+				4681E9731B4ECBEF00A89B0B /* Dining Room Filled-25.png */,
+				4681E9741B4ECBEF00A89B0B /* Dining Room-24 (1).png */,
+				4681E9751B4ECBEF00A89B0B /* Ground Transportation Filled-25.png */,
 				4681E94E1B4ECB4200A89B0B /* Main.storyboard */,
 				4681E9511B4ECB4200A89B0B /* Images.xcassets */,
 				4681E9531B4ECB4200A89B0B /* LaunchScreen.xib */,
@@ -195,9 +243,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4681E97B1B4ECBEF00A89B0B /* Airport-25.png in Resources */,
+				4681E9791B4ECBEF00A89B0B /* notepad-edit.png in Resources */,
+				4681E97D1B4ECBEF00A89B0B /* plan (1).png in Resources */,
+				4681E97E1B4ECBEF00A89B0B /* Dining Room-25.png in Resources */,
 				4681E9501B4ECB4200A89B0B /* Main.storyboard in Resources */,
+				4681E9761B4ECBEF00A89B0B /* Airplane Takeoff-24.png in Resources */,
+				4681E9811B4ECBEF00A89B0B /* Ground Transportation Filled-25.png in Resources */,
 				4681E9551B4ECB4200A89B0B /* LaunchScreen.xib in Resources */,
 				4681E9521B4ECB4200A89B0B /* Images.xcassets in Resources */,
+				4681E97F1B4ECBEF00A89B0B /* Dining Room Filled-25.png in Resources */,
+				4681E9771B4ECBEF00A89B0B /* Hotel-24.png in Resources */,
+				4681E97A1B4ECBEF00A89B0B /* Hotel-24 (3).png in Resources */,
+				4681E9781B4ECBEF00A89B0B /* users_group_people_friends-24.png in Resources */,
+				4681E9801B4ECBEF00A89B0B /* Dining Room-24 (1).png in Resources */,
+				4681E97C1B4ECBEF00A89B0B /* Hotel-24 (2).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4681E94D1B4ECB4200A89B0B /* ViewController.swift in Sources */,
+				4681E98B1B4ED38200A89B0B /* TripViewController.swift in Sources */,
 				4681E94B1B4ECB4200A89B0B /* SmartTrip.xcdatamodeld in Sources */,
+				4681E9911B4ED9A900A89B0B /* Flight.swift in Sources */,
+				4681E9891B4ED31900A89B0B /* FlightViewController.swift in Sources */,
+				4681E9931B4ED9AA00A89B0B /* Trip.swift in Sources */,
 				4681E9481B4ECB4200A89B0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +475,7 @@
 				4681E9661B4ECB4200A89B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4681E9671B4ECB4200A89B0B /* Build configuration list for PBXNativeTarget "SmartTripTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +484,7 @@
 				4681E9691B4ECB4200A89B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
