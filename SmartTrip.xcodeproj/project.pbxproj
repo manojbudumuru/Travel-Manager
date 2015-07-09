@@ -28,8 +28,9 @@
 		4681E9811B4ECBEF00A89B0B /* Ground Transportation Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 4681E9751B4ECBEF00A89B0B /* Ground Transportation Filled-25.png */; };
 		4681E9891B4ED31900A89B0B /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E9881B4ED31900A89B0B /* FlightViewController.swift */; };
 		4681E98B1B4ED38200A89B0B /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E98A1B4ED38200A89B0B /* TripViewController.swift */; };
-		4681E9911B4ED9A900A89B0B /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E9901B4ED9A900A89B0B /* Flight.swift */; };
-		4681E9931B4ED9AA00A89B0B /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E9921B4ED9AA00A89B0B /* Trip.swift */; };
+		4681E9951B4EE9BE00A89B0B /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E9941B4EE9BE00A89B0B /* Flight.swift */; };
+		4681E9971B4EE9BE00A89B0B /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E9961B4EE9BE00A89B0B /* Trip.swift */; };
+		4681E9991B4EEDBF00A89B0B /* TripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681E9981B4EEDBF00A89B0B /* TripDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +69,9 @@
 		4681E9751B4ECBEF00A89B0B /* Ground Transportation Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ground Transportation Filled-25.png"; sourceTree = "<group>"; };
 		4681E9881B4ED31900A89B0B /* FlightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
 		4681E98A1B4ED38200A89B0B /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
-		4681E9901B4ED9A900A89B0B /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flight.swift; path = ../Flight.swift; sourceTree = "<group>"; };
-		4681E9921B4ED9AA00A89B0B /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trip.swift; path = ../Trip.swift; sourceTree = "<group>"; };
+		4681E9941B4EE9BE00A89B0B /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		4681E9961B4EE9BE00A89B0B /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		4681E9981B4EEDBF00A89B0B /* TripDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +116,9 @@
 				4681E9471B4ECB4200A89B0B /* AppDelegate.swift */,
 				4681E98A1B4ED38200A89B0B /* TripViewController.swift */,
 				4681E94C1B4ECB4200A89B0B /* ViewController.swift */,
-				4681E9921B4ED9AA00A89B0B /* Trip.swift */,
 				4681E9881B4ED31900A89B0B /* FlightViewController.swift */,
 				4681E96A1B4ECBEF00A89B0B /* Airplane Takeoff-24.png */,
 				4681E96B1B4ECBEF00A89B0B /* Hotel-24.png */,
-				4681E9901B4ED9A900A89B0B /* Flight.swift */,
 				4681E96C1B4ECBEF00A89B0B /* users_group_people_friends-24.png */,
 				4681E96D1B4ECBEF00A89B0B /* notepad-edit.png */,
 				4681E96E1B4ECBEF00A89B0B /* Hotel-24 (3).png */,
@@ -130,9 +130,12 @@
 				4681E9741B4ECBEF00A89B0B /* Dining Room-24 (1).png */,
 				4681E9751B4ECBEF00A89B0B /* Ground Transportation Filled-25.png */,
 				4681E94E1B4ECB4200A89B0B /* Main.storyboard */,
+				4681E9981B4EEDBF00A89B0B /* TripDetailsViewController.swift */,
 				4681E9511B4ECB4200A89B0B /* Images.xcassets */,
 				4681E9531B4ECB4200A89B0B /* LaunchScreen.xib */,
 				4681E9491B4ECB4200A89B0B /* SmartTrip.xcdatamodeld */,
+				4681E9961B4EE9BE00A89B0B /* Trip.swift */,
+				4681E9941B4EE9BE00A89B0B /* Flight.swift */,
 				4681E9451B4ECB4200A89B0B /* Supporting Files */,
 			);
 			path = SmartTrip;
@@ -278,9 +281,10 @@
 				4681E94D1B4ECB4200A89B0B /* ViewController.swift in Sources */,
 				4681E98B1B4ED38200A89B0B /* TripViewController.swift in Sources */,
 				4681E94B1B4ECB4200A89B0B /* SmartTrip.xcdatamodeld in Sources */,
-				4681E9911B4ED9A900A89B0B /* Flight.swift in Sources */,
+				4681E9951B4EE9BE00A89B0B /* Flight.swift in Sources */,
 				4681E9891B4ED31900A89B0B /* FlightViewController.swift in Sources */,
-				4681E9931B4ED9AA00A89B0B /* Trip.swift in Sources */,
+				4681E9971B4EE9BE00A89B0B /* Trip.swift in Sources */,
+				4681E9991B4EEDBF00A89B0B /* TripDetailsViewController.swift in Sources */,
 				4681E9481B4ECB4200A89B0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

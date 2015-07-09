@@ -23,7 +23,7 @@
         <attribute name="restaurant_Name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="trip_ID" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Flight" representedClassName="Flight" syncable="YES">
+    <entity name="Flight" representedClassName="SmartTrip.Flight" syncable="YES">
         <attribute name="airlines" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="arrival_Time" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="confirmation_NO" optional="YES" attributeType="String" syncable="YES"/>
@@ -33,7 +33,6 @@
         <attribute name="flight_NO" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="trip_ID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <relationship name="ftrip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" syncable="YES"/>
     </entity>
     <entity name="Ground_Transportation" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
@@ -53,7 +52,7 @@
         <attribute name="reserved_Date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="trip_ID" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Trip" representedClassName="Trip" syncable="YES">
+    <entity name="Trip" representedClassName="SmartTrip.Trip" syncable="YES">
         <attribute name="trip_ID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="trip_Name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="trip_Starting_Date" optional="YES" attributeType="Date" syncable="YES"/>
@@ -62,9 +61,9 @@
         <element name="Activity" positionX="-63" positionY="-18" width="128" height="135"/>
         <element name="Companions" positionX="-54" positionY="36" width="128" height="103"/>
         <element name="Dining" positionX="-36" positionY="45" width="128" height="148"/>
-        <element name="Flight" positionX="-18" positionY="54" width="128" height="195"/>
+        <element name="Flight" positionX="-18" positionY="54" width="128" height="180"/>
         <element name="Ground_Transportation" positionX="18" positionY="72" width="128" height="163"/>
         <element name="Lodging" positionX="-9" positionY="36" width="128" height="133"/>
-        <element name="Trip" positionX="0" positionY="63" width="128" height="90"/>
+        <element name="Trip" positionX="0" positionY="63" width="128" height="88"/>
     </elements>
 </model>

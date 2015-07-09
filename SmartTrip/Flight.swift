@@ -20,6 +20,5 @@ class Flight: NSManagedObject {
     @NSManaged var flight_NO: String
     @NSManaged var source: String
     @NSManaged var trip_ID: NSNumber
-    @NSManaged var ftrip: Trip
 
 }
