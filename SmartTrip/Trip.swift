@@ -17,7 +17,7 @@ class Trip: NSManagedObject {
     class func createInManagedObjectContext(moc:NSManagedObjectContext,id:NSNumber, name:String, date:NSDate)
     {
         println("in trip class")
-        var newTrip=NSEntityDescription.insertNewObjectForEntityForName("Trip", inManagedObjectContext: moc) as Trip
+        var newTrip=NSEntityDescription.insertNewObjectForEntityForName("Trip", inManagedObjectContext: moc) as! Trip
         newTrip.trip_ID=id
         newTrip.trip_Name=name
         newTrip.trip_Starting_Date=date

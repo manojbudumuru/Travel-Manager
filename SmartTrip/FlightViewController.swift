@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class FlightViewController: UIViewController {
-     var  managedObjectContext  = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
+     var  managedObjectContext  = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
     @IBOutlet weak var airlinesTF: UITextField!
     @IBOutlet weak var flightNoTF: UITextField!
@@ -36,7 +36,7 @@ class FlightViewController: UIViewController {
     @IBAction func saveBTN(sender: AnyObject) {
         
         var flight = NSEntityDescription.insertNewObjectForEntityForName("Flight",
-            inManagedObjectContext: managedObjectContext!) as Flight
+            inManagedObjectContext: managedObjectContext!) as! Flight
         
         flight.airlines = airlinesTF.text
         flight.arrival_Time = arrivalTimeTF.text

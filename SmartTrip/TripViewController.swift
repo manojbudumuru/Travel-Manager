@@ -11,8 +11,8 @@ import UIKit
 import CoreData
 
 class TripViewController: UIViewController {
-    var  managedObjectContext  = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
-    var appy=UIApplication.sharedApplication().delegate as AppDelegate
+    var  managedObjectContext  = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    var appy=UIApplication.sharedApplication().delegate as! AppDelegate
     
     
     @IBOutlet weak var tripNameTF: UITextField!
@@ -53,14 +53,18 @@ class TripViewController: UIViewController {
     }
     
     
-    /*
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if(segue.identifier == "SaveTrip"){
+            var tripDetails  = segue.destinationViewController as! TripDetailsViewController
+        }
     // Get the new view controller using segue.destinationViewController.
     // Pass the selected object to the new view controller.
     }
-    */
+    
     
 }

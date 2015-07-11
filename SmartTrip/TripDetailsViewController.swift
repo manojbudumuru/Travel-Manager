@@ -8,9 +8,24 @@
 
 import UIKit
 
-class TripDetailsViewController: UIViewController {
-var appy=UIApplication.sharedApplication().delegate as AppDelegate
+class TripDetailsViewController: UIViewController{ //UITableViewDataSource, UITableViewDelegate
+var appy=UIApplication.sharedApplication().delegate as! AppDelegate
     @IBOutlet weak var tripName: UILabel!
+   // @IBOutlet weak var myTableView: UITableView!
+    
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+//        return 1
+//    }
+//    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+//    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+//    
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+//        
+//        let cell = myTableView.dequeueReusableCellWithIdentifier("tripPlan", forIndexPath: indexPath) as! UITableViewCell
+//        
+//        cell.textLabel?.text = "Manmai"
+//        return cell
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tripName.text=appy.trip_name
