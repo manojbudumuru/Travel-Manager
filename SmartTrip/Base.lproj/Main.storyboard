@@ -48,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWP-bN-x5o" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021.5" y="413"/>
+            <point key="canvasLocation" x="1353" y="460"/>
         </scene>
         <!--Add Trip-->
         <scene sceneID="yHx-Wc-Ogq">
@@ -96,6 +96,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="183" y="257" width="74" height="30"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="Hnl-iu-1N2" kind="presentation" id="At3-9h-fgo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVX-tp-fYd">
                                 <rect key="frame" x="78" y="307" width="50" height="30"/>
@@ -165,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsX-vg-ckK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1974" y="249"/>
+            <point key="canvasLocation" x="2046" y="442"/>
         </scene>
         <!--trips-->
         <scene sceneID="veZ-ia-lcg">
@@ -203,20 +206,45 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="221" y="503" width="85" height="30"/>
+                                    <rect key="frame" x="18" y="503" width="85" height="30"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="Hnl-iu-1N2" kind="presentation" id="bYx-qE-0nU"/>
+                                </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7dw-Ch-S5d">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="7" y="119" width="387" height="300"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="GFI-ty-SD9" id="LzB-vy-fOg"/>
+                                    <outlet property="delegate" destination="GFI-ty-SD9" id="nQB-Fb-GAd"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7dw-Ch-S5d"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="7dw-Ch-S5d"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="trips" id="i2Y-Wk-hAS"/>
                     <connections>
+                        <outlet property="myTableView" destination="7dw-Ch-S5d" id="LcE-vw-KzO"/>
                         <outlet property="tripName" destination="ke7-cA-EqF" id="VVT-hU-0Zx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nik-th-HeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2842.5" y="441"/>
+            <point key="canvasLocation" x="2899.5" y="410"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nOL-UV-elE">
@@ -475,10 +503,10 @@
             </objects>
             <point key="canvasLocation" x="3049.5" y="1120"/>
         </scene>
-        <!--View Controller-->
+        <!--Flight View Controller-->
         <scene sceneID="IcQ-re-CnS">
             <objects>
-                <viewController id="wdm-QI-HNK" sceneMemberID="viewController">
+                <viewController id="wdm-QI-HNK" customClass="FlightViewController" customModule="SmartTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xgY-Wc-WOn"/>
                         <viewControllerLayoutGuide type="bottom" id="WBR-xo-0gp"/>
@@ -599,14 +627,6 @@
                                     <rect key="frame" x="181" y="262" width="106" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wGt-HK-vL5">
-                                <rect key="frame" x="226" y="314" width="78" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="181" y="314" width="106" height="30"/>
-                                </variation>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0sx-QK-Ipn">
                                 <rect key="frame" x="226" y="365" width="78" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -623,6 +643,10 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="27" y="489" width="34" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="saveBTN:" destination="wdm-QI-HNK" eventType="touchUpInside" id="VDr-OU-ZCo"/>
+                                    <segue destination="GFI-ty-SD9" kind="modal" id="OMe-sy-w81"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYt-wf-9Ff">
                                 <rect key="frame" x="242" y="489" width="40" height="30"/>
@@ -632,6 +656,10 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="225" y="489" width="40" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="ResetBTN:" destination="wdm-QI-HNK" eventType="touchUpInside" id="VUp-5u-an8"/>
+                                    <action selector="cancelBTN:" destination="wdm-QI-HNK" eventType="touchUpInside" id="rMb-Ia-z1K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiC-17-XOX">
                                 <rect key="frame" x="136" y="489" width="48" height="30"/>
@@ -641,6 +669,10 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="119" y="489" width="48" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="cancelBTN:" destination="wdm-QI-HNK" eventType="touchUpInside" id="VCu-C3-8O4"/>
+                                    <segue destination="ZfA-AV-DrC" kind="modal" id="R2j-vU-gHw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Air Travel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhB-1L-ctg">
                                 <rect key="frame" x="125" y="31" width="71" height="21"/>
@@ -656,13 +688,54 @@
                                     <rect key="frame" x="181" y="417" width="106" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wGt-HK-vL5">
+                                <rect key="frame" x="226" y="314" width="78" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="181" y="314" width="106" height="30"/>
+                                </variation>
+                            </textField>
+                            <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="taO-Zm-ALi">
+                                <rect key="frame" x="-160" y="-81" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="458282960.53506398">
+                                    <!--2015-07-11 04:49:20 +0000-->
+                                </date>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="542" width="198" height="38"/>
+                                </variation>
+                                <connections>
+                                    <action selector="depDate:" destination="wdm-QI-HNK" eventType="valueChanged" id="BAJ-cb-9qH"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="taO-Zm-ALi"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="taO-Zm-ALi"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="airlinesTF" destination="5mZ-o3-HqA" id="S7K-8v-HRK"/>
+                        <outlet property="arrivalTimeTF" destination="0sx-QK-Ipn" id="mHp-o8-4ho"/>
+                        <outlet property="dateTF" destination="wGt-HK-vL5" id="0SO-Hi-ecH"/>
+                        <outlet property="depDateTF" destination="taO-Zm-ALi" id="22G-ew-XaX"/>
+                        <outlet property="depTimeTF" destination="QmK-cj-CwW" id="IaO-KP-mmh"/>
+                        <outlet property="destinationTF" destination="4nz-qI-kL9" id="dAl-LF-FQ3"/>
+                        <outlet property="fconfirmationTF" destination="OJq-IZ-jxV" id="JjP-tE-CQg"/>
+                        <outlet property="flightNoTF" destination="GlE-hP-IoP" id="Dqq-Yw-pGM"/>
+                        <outlet property="sourceTF" destination="adY-Fh-dPQ" id="TaD-U8-S1s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQZ-yE-EQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4219.5" y="442"/>
+            <point key="canvasLocation" x="4219" y="442"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="j1A-fz-0Iv">
@@ -1425,7 +1498,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fb4-FS-GM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238.5" y="414"/>
+            <point key="canvasLocation" x="915" y="453"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yZo-aN-YZ2">
@@ -1687,4 +1760,9 @@
         <image name="plan (1).png" width="284" height="247"/>
         <image name="users_group_people_friends-24.png" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="OMe-sy-w81"/>
+        <segue reference="R2j-vU-gHw"/>
+        <segue reference="bYx-qE-0nU"/>
+    </inferredMetricsTieBreakers>
 </document>

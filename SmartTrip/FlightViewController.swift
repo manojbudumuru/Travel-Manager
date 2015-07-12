@@ -16,17 +16,18 @@ class FlightViewController: UIViewController {
     @IBOutlet weak var flightNoTF: UITextField!
     @IBOutlet weak var fconfirmationTF: UITextField!
     @IBOutlet weak var sourceTF: UITextField!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateTF: UITextField!
+    
     
     @IBOutlet weak var depDateTF: UIDatePicker!
     @IBAction func depDate(sender: UIDatePicker) {
         var dateFormatter = NSDateFormatter()
         
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+//        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
         
         var strDate = dateFormatter.stringFromDate(depDateTF.date)
-        dateLabel.text = strDate
+        dateTF.text = strDate
 
     }
     
@@ -55,6 +56,16 @@ class FlightViewController: UIViewController {
     @IBAction func cancelBTN(sender: AnyObject) {
     }
     @IBAction func ResetBTN(sender: AnyObject) {
+        var alert = UIAlertView(title: "Reset", message: "Are you Sure Do You want to reset? ", delegate: nil, cancelButtonTitle: "ok")
+        alert.show()
+        flightNoTF.text = ""
+        sourceTF.text = ""
+        airlinesTF.text = ""
+        fconfirmationTF.text = ""
+        dateTF.text = ""
+        arrivalTimeTF.text = ""
+        depTimeTF.text = ""
+        destinationTF.text = ""
     }
     override func viewDidLoad() {
         super.viewDidLoad()

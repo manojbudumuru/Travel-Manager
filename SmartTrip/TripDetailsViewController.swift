@@ -8,28 +8,30 @@
 
 import UIKit
 
-class TripDetailsViewController: UIViewController{ //UITableViewDataSource, UITableViewDelegate
+class TripDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 var appy=UIApplication.sharedApplication().delegate as! AppDelegate
     @IBOutlet weak var tripName: UILabel!
-   // @IBOutlet weak var myTableView: UITableView!
+   
+    @IBOutlet weak var myTableView: UITableView!
     
-//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-//        return 1
-//    }
-//    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-//    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-//    
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-//        
-//        let cell = myTableView.dequeueReusableCellWithIdentifier("tripPlan", forIndexPath: indexPath) as! UITableViewCell
-//        
-//        cell.textLabel?.text = "Manmai"
-//        return cell
-//    }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 1
+    }
+    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        
+        let cell = myTableView.dequeueReusableCellWithIdentifier("tripPlan", forIndexPath: indexPath) as! UITableViewCell
+        
+        cell.textLabel?.text = "Manmai"
+        return cell
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tripName.text=appy.trip_name
-
+        self.myTableView.registerClass(UITableViewCell.self,  forCellReuseIdentifier: "tripPlan")
+        
         // Do any additional setup after loading the view.
     }
 
@@ -39,14 +41,17 @@ var appy=UIApplication.sharedApplication().delegate as! AppDelegate
     }
     
 
-    /*
+        
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if(segue.identifier == "tripList"){
+//            var tripList  = segue.destinationViewController as! ViewController
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+    
 
-}
+    
+    }
+
