@@ -2,7 +2,7 @@
 //  Flight.swift
 //  SmartTrip
 //
-//  Created by Saibersys on 7/15/15.
+//  Created by Saibersys on 7/20/15.
 //  Copyright (c) 2015 Student. All rights reserved.
 //
 
@@ -20,6 +20,5 @@ class Flight: NSManagedObject {
     @NSManaged var flight_NO: String
     @NSManaged var source: String
     @NSManaged var trip_ID: NSNumber
-    @NSManaged var fTrip: Trip
 
 }
